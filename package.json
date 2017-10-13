@@ -1,0 +1,87 @@
+{
+  "name": "ng-clipboard-antd",
+  "version": "1.0.0",
+  "main": "index.js",
+  "typings": "index.d.ts",
+  "description": "A wrapper directive for clipboard.js, and base on ng-zorro-antd.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cipchk/ng-clipboard-antd.git"
+  },
+  "keywords": [
+    "ng-clipboard-antd",
+    "angular-clipboard-antd",
+    "ng-clipboard",
+    "ng2-clipboard",
+    "angular-clipboard",
+    "angular2-clipboard",
+    "clipboard",
+    "ng-zorro-antd",
+    "antd"
+  ],
+  "author": "cipchk <cipchk>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cipchk/ng-clipboard-antd/issues"
+  },
+  "homepage": "https://github.com/cipchk/ng-clipboard-antd#readme",
+  "scripts": {
+    "lite-server": "lite-server -c demo/bs-config.json",
+    "demo.serve": "run-s build link demo.build lite-server",
+    "demo.gh-pages": "run-s build link demo.build demo.deploy",
+    "demo.build": "ng build -prod",
+    "demo.deploy": "gh-pages -d demo/dist",
+    "link": "ngm link -p src --here",
+    "lint": "exit 0",
+    "build": "ngm build -p src --clean",
+    "build.watch": "ngm build -p src --watch --skip-bundles",
+    "start": "ng serve",
+    "pretest": "run-s lint build link",
+    "test": "ng test -sr",
+    "test-coverage": "ng test -sr -cc"
+  },
+  "dependencies": {
+    "ng-zorro-antd": "^0.5.3"
+  },
+  "peerDependencies": {
+    "ng-zorro-antd": ">=0.5.3"
+  },
+  "devDependencies": {
+    "@angular/animations": "^4.4.5",
+    "@angular/cli": "1.4.7",
+    "@angular/common": "^4.4.0",
+    "@angular/compiler": "^4.4.0",
+    "@angular/compiler-cli": "^4.4.0",
+    "@angular/core": "^4.4.0",
+    "@angular/forms": "^4.4.0",
+    "@angular/http": "^4.4.0",
+    "@angular/language-service": "^4.4.0",
+    "@angular/platform-browser": "^4.4.0",
+    "@angular/platform-browser-dynamic": "^4.4.0",
+    "@angular/router": "^4.4.0",
+    "@angular/tsc-wrapped": "^4.4.0",
+    "@types/jasmine": "~2.6.0",
+    "@types/marked": "~0.3.0",
+    "@types/node": "~8.0.34",
+    "classlist-polyfill": "^1.2.0",
+    "codelyzer": "~3.2.1",
+    "jasmine-core": "~2.8.0",
+    "jasmine-spec-reporter": "~4.2.1",
+    "karma": "~1.7.1",
+    "karma-chrome-launcher": "~2.2.0",
+    "karma-cli": "~1.0.1",
+    "karma-coverage-istanbul-reporter": "^1.3.0",
+    "karma-jasmine": "~1.1.0",
+    "karma-jasmine-html-reporter": "^0.2.2",
+    "lite-server": "^2.3.0",
+    "ngm-cli": "^0.8.2",
+    "ngx-highlight-js": "^1.0.1",
+    "npm-run-all": "^4.1.1",
+    "protractor": "~5.1.2",
+    "ts-helpers": "^1.1.2",
+    "ts-node": "~3.3.0",
+    "tslint": "^5.7.0",
+    "typescript": "~2.3.3",
+    "zone.js": "^0.8.18"
+  }
+}
