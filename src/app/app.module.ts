@@ -6,14 +6,16 @@ import { BrowserModule } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HighlightJsModule } from 'ngx-highlight-js';
-
 import { NgZorroAntdModule } from 'ng-zorro-antd';
-import { NzClipboardModule } from 'ng-clipboard-antd';
+import { NzClipboardModule } from '../../lib/index';
 
 import { AppComponent } from './app.component';
 import { DemoComponent } from './demo.component';
 
 @NgModule({
+  declarations: [
+    AppComponent, DemoComponent
+  ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
@@ -25,13 +27,7 @@ import { DemoComponent } from './demo.component';
     NgZorroAntdModule.forRoot(),
     NzClipboardModule.forRoot()
   ],
-  declarations: [
-    AppComponent,
-    DemoComponent
-  ],
-  providers: [  ],
+  providers: [],
   bootstrap: [AppComponent]
 })
-
-export class AppDemoModule {
-}
+export class AppModule { }

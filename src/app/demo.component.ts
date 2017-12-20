@@ -1,11 +1,10 @@
 import { Component, OnInit, ViewEncapsulation, AfterViewInit, ViewChild, ElementRef } from '@angular/core';
-import { NzClipboardService } from 'ng-clipboard-antd';
 import { NzMessageService } from 'ng-zorro-antd';
+import { NzClipboardService } from '../../lib/index';
 
 @Component({
     selector: 'demo',
-    templateUrl: './demo.component.html',
-    styleUrls: ['./demo.component.scss']
+    templateUrl: './demo.component.html'
 })
 export class DemoComponent {
 

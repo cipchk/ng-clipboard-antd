@@ -5,7 +5,6 @@ A wrapper directive for clipboard.js, and base on ng-zorro-antd.
 The core function is ported from [clipboard.js](https://github.com/zenorocha/clipboard.js)(@zenorocha) & [ngx-clipboard](https://github.com/maxisam/ngx-clipboard)(@maxisam), thanks.
 
 [![NPM version](https://img.shields.io/npm/v/ng-clipboard-antd.svg)](https://www.npmjs.com/package/ng-clipboard-antd)
-[![Build Status](https://travis-ci.org/cipchk/ng-clipboard-antd.svg?branch=master)](https://travis-ci.org/cipchk/ng-clipboard-antd)
 
 ## Demo
 
