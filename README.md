@@ -1,3 +1,5 @@
+# 已过期，新的剪贴板由 [@delon/abc](https://github.com/cipchk/delon) 提供。
+
 # ng-clipboard-antd
 
 A wrapper directive for clipboard.js, and base on ng-zorro-antd.
